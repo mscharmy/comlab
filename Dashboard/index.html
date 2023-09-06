@@ -1,0 +1,286 @@
+<nav>
+    <a class="navbar-brand" href="../index.php">
+      <img src="../resources/images/logo.png" width="100" height="30" alt="logo">
+    </a>
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+        
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Register</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="studentregister.php">Student</a>
+        <a class="dropdown-item" href="../professor/professorRegister.php">Faculty</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="studentlogin.php">Student</a>
+          <a class="dropdown-item" href="../professor/professorLogin.php"> Faculty</a>
+      </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <input type="checkbox"  id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand"> 
+            <h2><span class="las la-hippo" ></span> <span>LabCheck</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="" class="active"><span class="las la-igloo"></span>
+                        <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-user"></span>
+                        <span>Students</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-users"></span>
+                        <span>Faculty Members</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-calendar"></span>
+                        <span>Calendar</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-user-circle"></span>
+                        <span>Accounts</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+
+                Dashboard
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search Here!" />
+            </div>
+
+            <div class="user-wrapper">
+                <img src="luffy.jpg" width="40px" height="40px" alt="Where my niku at?">
+                <div>
+                    <h4>Monkey D. Luffytaro</h4>
+                    <small>Baka Admin 'To</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>69</h1>
+                        <span>Pending Registration of Students</span>
+                    </div>
+                    <div>
+                        <span class="las la-user"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>6</h1>
+                        <span>Pending Registration of Faculty Members</span>
+                    </div>
+                    <div>
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>19</h1>
+                        <span>Total Available Dates</span>
+                    </div>
+                    <div>
+                        <span class="las la-calendar"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>190</h1>
+                        <span>Total Users</span>
+                    </div>
+                    <div>
+                        <span class="las la-user-circle"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-grid">
+                <div class="div students">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Complaints/Issues</h3>
+
+                            <button>See all <span class="las la-arrow-right">
+                            </span></button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Department</td>
+                                            <td>Name</td>
+                                            <td>Yr & Sec</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Info Tech</td>
+                                            <td>Roronoa Zorojuro</td>
+                                            <td>IT41</td>
+                                            <td>
+                                                <span class="status green"></span>
+                                                In progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engineering</td>
+                                            <td>Roronoa Zorojuro</td>
+                                            <td>IT32</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                Reviewing
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entrepreneur</td>
+                                            <td>Roronoa Zorojuro</td>
+                                            <td>IT42</td>
+                                            <td>
+                                                <span class="status red"></span>
+                                                Tatapon na
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="requests">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Requests</h3>
+
+                            <button>See all <span class="las la-arrow-right">
+                            </span></button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="user">
+                                <div class="info">
+                                    <img src="luffy.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Kozuki Oden</h4>
+                                        <small>CET Professor</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-comment"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="user">
+                                <div class="info">
+                                    <img src="luffy.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Kozuki Oden</h4>
+                                        <small>CET Professor</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-comment"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="user">
+                                <div class="info">
+                                    <img src="luffy.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Kozuki Oden</h4>
+                                        <small>CET Professor</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-comment"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+
+
+
+
+	<script src="./index.js"></script>
+</body>
+</html>
